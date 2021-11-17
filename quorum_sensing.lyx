@@ -1,0 +1,236 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{doi}
+\usepackage{mathpazo}
+\usepackage{color}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "urlcolor=airforceblue,linkcolor=airforceblue,citecolor=airforceblue"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Itemize
+We need to find out what the adaptive advantage is of producing virulence
+ factors in a linear fashion.
+ Why not have something nonlinear, so that you only commit on the production
+ of virulence factors once you know how many there are! What is the use
+ of just a bit of virulence factor? Perhaps we need to read 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Schuster2017"
+literal "false"
+
+\end_inset
+
+ to find this out.
+\end_layout
+
+\begin_layout Itemize
+We need to find out more about the private v public good difference here.
+ If this is all about virulence factors, then the nonfocal strains who will
+ mess up the signal still benefit from how the focal strain is destroying
+ the midgut barrier.
+ Why is this a private good exactly?
+\end_layout
+
+\begin_layout Standard
+Our model builds on previous models that consider QS in a multi-strain context
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "Eldar2011"
+literal "false"
+
+\end_inset
+
+.
+ In contrast to these models, however, we consider the context of a private
+ good (virulence factor production), rather than a public good and ocns
+ can dilute the concentration of QS, thereby eleminating collective signal
+ efficacy.
+ Each strain expresses a costly signal 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ and a receptor locus 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+.
+ We assume that the signal-receptor 
+\begin_inset Formula $RS$
+\end_inset
+
+ complex activates gene loci that express virulence factors 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+, so that the growth in virulence factors is a function 
+\begin_inset Formula $f(s_{i};s_{j})$
+\end_inset
+
+ increases with signal 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ produced by the focal strain 
+\begin_inset Formula $i$
+\end_inset
+
+, but may be diluted by the amount of signal expressed by nonfocal strains
+ 
+\begin_inset Formula $s_{j}$
+\end_inset
+
+.
+ We have
+\begin_inset Formula 
+\begin{align*}
+f(s_{i};s_{j}) & =r_{i}\frac{s_{i}}{k_{rs}+k_{1}s_{1}+k_{2}s_{2}}
+\end{align*}
+
+\end_inset
+
+In turn, these virulence factors result in a population being more likely
+ to break through the midgut barrier, so that the maximand is the amount
+ of 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ expressed by the group at steady state.
+ Hence, we have 
+\begin_inset Formula 
+\begin{align*}
+\frac{\mathrm{d}n_{i}}{\mathrm{d}t} & =b_{i}[1-c(s)]n_{i}\left(1-k\left(n_{1}+n_{2}\right)\right)\\
+\frac{\mathrm{d}s_{i}}{\mathrm{d}t} & =\left(p_{i}+a_{i}s_{i}\right)n_{i}-r_{i}s_{i}\\
+\frac{\mathrm{d}v_{i}}{\mathrm{d}t} & =f\left(s_{i};s_{j}\right)-kv_{i}
+\end{align*}
+
+\end_inset
+
+However, maximizing the equilibrium level of 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ through 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ results in a simple expression stating 
+\begin_inset Formula $s_{2}=-k_{rs}/k_{2}$
+\end_inset
+
+, but as 
+\begin_inset Formula $s_{2}\geq0$
+\end_inset
+
+, it effectively means that 
+\begin_inset Formula $s_{2}=0$
+\end_inset
+
+ (
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "../databases/transgenerational"
+options "bram"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
